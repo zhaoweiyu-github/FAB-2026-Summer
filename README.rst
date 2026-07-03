@@ -11,18 +11,17 @@ main tools used in the course.
 Page sites
 ----------
 
-* GitHub Pages: https://zhaoweiyu-github.github.io/FAB-2026-Summer/
 * Read the Docs: https://fab-2026-summer.readthedocs.io/en/latest/
 * Local preview: ``docs/build/html/index.html``
 
 Course pages
 ------------
 
-* Day 1: https://zhaoweiyu-github.github.io/FAB-2026-Summer/Day1.html
-* Day 2: https://zhaoweiyu-github.github.io/FAB-2026-Summer/Day2.html
-* Day 3: https://zhaoweiyu-github.github.io/FAB-2026-Summer/Day3.html
-* Day 4: https://zhaoweiyu-github.github.io/FAB-2026-Summer/Day4.html
-* Resources: https://zhaoweiyu-github.github.io/FAB-2026-Summer/resources.html
+* Day 1: https://fab-2026-summer.readthedocs.io/en/latest/Day1.html
+* Day 2: https://fab-2026-summer.readthedocs.io/en/latest/Day2.html
+* Day 3: https://fab-2026-summer.readthedocs.io/en/latest/Day3.html
+* Day 4: https://fab-2026-summer.readthedocs.io/en/latest/Day4.html
+* Resources: https://fab-2026-summer.readthedocs.io/en/latest/resources.html
 
 Build locally
 -------------
