@@ -1,9 +1,18 @@
-Template for the Read the Docs tutorial
-=======================================
+FAB-2026-Summer
+===============
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+Course documentation for **Functional Annotation Bioinformatics, Summer 2026**.
 
-Read the tutorial here:
+The site is built with Sphinx and the Read the Docs theme.  It contains a
+month-by-month schedule, assignment briefs, datasets, deliverables, and links to
+the main tools used in the course.
 
-https://docs.readthedocs.io/en/stable/tutorial/
+Build locally
+-------------
+
+.. code-block:: console
+
+   python -m pip install -r docs/requirements.txt
+   sphinx-build -b html docs/source docs/build/html
+
+The rendered entry point is ``docs/build/html/index.html``.
