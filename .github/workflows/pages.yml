@@ -7,8 +7,6 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
@@ -17,6 +15,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -37,6 +38,9 @@ jobs:
       - name: Build HTML
         run: sphinx-build -b html docs/source docs/build/html
 
+      - name: Disable Jekyll processing
+        run: touch docs/build/html/.nojekyll
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
@@ -48,6 +52,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
