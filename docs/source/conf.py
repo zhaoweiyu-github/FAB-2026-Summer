@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'FAB-2026-Summer'
+project = 'Frontiers and Advance of Bioinformatics'
 copyright = '2026, ZhangLab'
 author = 'ZhangLab'
 
